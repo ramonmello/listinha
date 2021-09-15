@@ -1,0 +1,61 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "jest": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@next/next/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "import-helpers",
+    "prettier",
+    "react-hooks",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "react/react-in-jsx-scope": "off",
+    "@next/next/no-img-element": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "/^next/",
+          "/^react/",
+          "module",
+          "/^~/components/",
+          "/^~/templates/",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": false }
+      }
+    ]
+  }
+}
