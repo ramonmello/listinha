@@ -1,14 +1,11 @@
 import type { NextPage } from 'next'
 
-import { Header, BannerSlider, Container } from '~/presentation/components'
+import { Header } from '~/presentation/components'
 
 const Home: NextPage = () => {
   return (
     <>
       <Header />
-      <Container>
-        <BannerSlider />
-      </Container>
     </>
   )
 }
