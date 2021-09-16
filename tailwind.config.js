@@ -1,7 +1,15 @@
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        pink: {
+          custom: '#F71778'
+        }
+      }
+    }
+  },
   variants: {
     extend: {}
   },

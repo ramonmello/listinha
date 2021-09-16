@@ -1,12 +1,26 @@
 import type { NextPage } from 'next'
 
-import { Header } from '~/presentation/components'
+import { Container, Logo } from '~/presentation/components'
 
 const Home: NextPage = () => {
   return (
-    <>
-      <Header />
-    </>
+    <Container className="flex flex-col items-center justify-center h-screen">
+      <div className="flex flex-col justify-between h-80">
+        <Logo className="mx-auto" />
+        <div className="flex flex-col items-center">
+          <h1 className="font-bold text-lg text-gray-900">
+            Bem-vindo(a) ao ORGANZ!
+          </h1>
+          <p className="w-44 text-center text-gray-600 pb-14 pt-8">
+            Organize sua rotina e torne a vida mais fácil. Inicie o teste e
+            confira o que temos para você!
+          </p>
+          <button className="transition duration-500 ease-in-out bg-pink-custom transform hover:scale-105 h-12 w-40 rounded-md text-sm text-white font-bold uppercase">
+            Iniciar
+          </button>
+        </div>
+      </div>
+    </Container>
   )
 }
 
