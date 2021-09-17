@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 
-import { Container, Logo } from '~/presentation/components'
+import { Container, Logo, Button } from '~/presentation/components'
 
 const Home: NextPage = () => {
   return (
@@ -15,9 +15,7 @@ const Home: NextPage = () => {
             Organize sua rotina e torne a vida mais fácil. Inicie o teste e
             confira o que temos para você!
           </p>
-          <button className="transition duration-500 ease-in-out bg-pink-custom transform hover:scale-105 h-12 w-40 rounded-md text-sm text-white font-bold uppercase">
-            Iniciar
-          </button>
+          <Button href="/form">Iniciar</Button>
         </div>
       </div>
     </Container>
