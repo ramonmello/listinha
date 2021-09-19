@@ -10,7 +10,7 @@ const Button = ({ children, href, ...props }: Props) => {
   return (
     <Link href={href} passHref>
       <button
-        className="transition duration-500 ease-in-out bg-pink-custom transform hover:scale-105 h-12 w-40 rounded-md text-sm text-white font-bold uppercase shadow-md"
+        className="bg-pink-custom transform h-12 w-40 rounded-md text-sm text-white font-bold uppercase shadow-md"
         {...props}
       >
         {children}

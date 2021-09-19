@@ -1,13 +1,6 @@
-type Props = {
-  className?: string
-  children: React.ReactNode
-}
-
-const Container = ({ children, className }: Props) => (
-  <div className="flex items-center">
-    <div className={`w-full max-w-screen-lg mx-auto px-6 ${className}`}>
-      {children}
-    </div>
+const Container = ({ children }) => (
+  <div className="flex flex-col items-center justify-center h-full">
+    <div className="flex flex-col justify-between h-80">{children}</div>
   </div>
 )
 
